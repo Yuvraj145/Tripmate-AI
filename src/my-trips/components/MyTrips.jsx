@@ -3,6 +3,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UserTripCardItem from "./UserTripCardItem";
+import Footer from "@/viewTrip/components/Footer";
 
 const MyTrips = () => {
   const user =JSON.parse(localStorage.getItem("user"));
@@ -47,6 +48,7 @@ const MyTrips = () => {
               ></div>;
             })}
       </div>
+      <Footer/>
       </div>
   )
 };

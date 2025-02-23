@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
+import Footer from "@/viewTrip/components/Footer";
 
 function Hero() {
   return (
@@ -20,6 +21,7 @@ function Hero() {
         <Button className="bg-black text-white">Get Started, It's Free</Button>
       </Link>
       <img src="/landing.png" alt="" className="-mt-20px" />
+      <Footer/>
     </div>
   );
 }
