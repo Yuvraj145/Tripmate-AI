@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const PlaceCardItem = ({ plans }) => {
   const [photoUrl, setPhotoUrl] = useState();
-  console.log(plans)
+  // console.log(plans)
     useEffect(() => {
       plans && getPlacePhoto();
     }, [plans]);
