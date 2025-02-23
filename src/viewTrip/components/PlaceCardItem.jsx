@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const PlaceCardItem = ({ plans }) => {
   const [photoUrl, setPhotoUrl] = useState();
+  // console.log(plans)
     useEffect(() => {
       plans && getPlacePhoto();
     }, [plans]);
@@ -39,7 +40,7 @@ const PlaceCardItem = ({ plans }) => {
           <p className="text-sm text-gray-500">
             {plans.placeDetails || plans.PlaceDetails}
           </p>
-          <h2 className="mt-2">🕚 {plans.timeTravel || plans.TimeTravel}</h2>
+          <h2 className="mt-2">🕚 {plans.timeTravel || plans.travelTime} minutes</h2>
         </div>
       </div>
     </Link>
