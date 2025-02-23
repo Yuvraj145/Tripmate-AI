@@ -46,9 +46,9 @@ const InfoSection = ({ trip }) => {
               🧑🏻‍🤝‍🧑🏽 {trip?.userSelection?.traveler} are Travelers
             </h2>
           </div>
-          <Button>
+          {/* <Button>
             <IoIosSend color="black" />
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
